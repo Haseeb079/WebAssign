@@ -1,0 +1,14 @@
+﻿<h3>CustomerDetails</h3>
+
+<EditForm Model="@CustomerDetails" OnValidSubmit="@Submit">
+</EditForm>
+
+@code {
+
+    CustomerDetails CustomerDetails;
+    protected override void OnInitialized()
+    {
+        CustomerDetails = new CustomerDetails();
+    }
+}
+}
